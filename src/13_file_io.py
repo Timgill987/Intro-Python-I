@@ -1,7 +1,6 @@
 """
 Python makes performing file I/O simple. Take a look
 at how to read and write to files here:
-
 https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 """
 
@@ -10,6 +9,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+foo = open('C:/Users/timgi/Desktop/CS-week-1/Intro-Python-I/src/foo.txt', 'r')
+x = foo.read()
+print(x)
+foo.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +20,8 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+bar = open('C:/Users/timgi/Desktop/CS-week-1/Intro-Python-I/src/bar.txt', 'rb+')
+y = bar.write(b'Unicorns!')
+bar.close()
+print(y)
